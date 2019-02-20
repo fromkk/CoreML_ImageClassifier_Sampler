@@ -1,0 +1,10 @@
+/* 
+  Localizable.strings
+  CoreMLImageClassifier
+
+  Created by Kazuya Ueoka on 2019/02/20.
+  Copyright © 2019 fromkk. All rights reserved.
+*/
+"camera_roll.no_permission" = "No permission for access camera roll.";
+
+"camera_roll.no_photos" = "No photos.";

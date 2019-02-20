@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  CoreMLImageClassifier
 //
-//  Created by Kazuya Ueoka on 2019/02/20.
-//  Copyright © 2019 fromkk. All rights reserved.
+//  Created by Kazuya Ueoka on 2019/01/16.
+//  Copyright © 2019 Timers Inc. All rights reserved.
 //
 
 import UIKit
@@ -13,9 +13,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    private var applicationCoordinator: ApplicationCoordinator?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        window.backgroundColor = .white
+        applicationCoordinator = ApplicationCoordinator(window: window)
+        applicationCoordinator?.start()
+        window.makeKeyAndVisible()
+        
+        self.window = window
+        
         return true
     }
 
